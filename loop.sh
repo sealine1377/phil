@@ -106,7 +106,7 @@ for i in $(seq 1 "$CYCLES"); do
   # running a FULL cycle on Sonnet. The collision guard is left to CYCLE.md:
   # an operator commit landing between here and the session's own fetch
   # would flip it, and the error would go the wrong way.
-  MODEL=claude-opus-5-5
+  MODEL=claude-sonnet-5-5
   MODEL_WHY="tick may run FULL"
   if python3 - <<'PY'
 import datetime as dt, json, re, sys
